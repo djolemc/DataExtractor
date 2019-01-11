@@ -97,6 +97,9 @@ function getISSN ($x) {
 
 preg_match_all('/(ISSN|issn|Issn)(\D|\s|\D\s)(\d{4}\D\d+\D|(\d+\D))/', $x,$y);
 
+  //preg_match_all('/(?=(.{5}(issn).{40}))/gi', $x,$y);  
+    
+    
 return($y);
 
 }
